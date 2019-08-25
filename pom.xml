@@ -31,4 +31,10 @@
       <layout>legacy</layout>
     </snapshotRepository>
   </distributionManagement>
+  <component>
+  <role>org.apache.maven.wagon.Wagon</role>
+  <role-hint>http-httpclient</role-hint>
+  <implementation>org.apache.maven.wagon.providers.http.HttpWagon</implementation>
+  <instantiation-strategy>per-lookup</instantiation-strategy>
+</component>
 </project>
